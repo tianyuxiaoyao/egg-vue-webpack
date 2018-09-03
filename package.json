@@ -55,12 +55,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-webpack-vue.git"
+    "url": "git+https://github.com/tianyuxiaoyao/egg-vue-webpack.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/tianyuxiaoyao/egg-vue-webpack/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-webpack-vue#readme",
+  "homepage": "https://github.com/tianyuxiaoyao/egg-vue-webpack#readme",
   "author": "tushun",
   "license": "MIT"
 }
