@@ -26,16 +26,12 @@ module.exports = app => {
 
   app.messenger.on('webpack_success', data => {
     if (app.vue && data) {
-      app.webpack_build_success = true;
       const renderBundle = app.vue.renderBundle;
-      const {
-        bundle,
-        renderOptions,
-      } = data;
-      app.vue.renderOptions = {
-        ...app.vue.renderOptions,
-        ...renderOptions,
-      };
+      const { bundle, renderOptions } = data;
+
+      app.webpack_build_success = true;
+      app.vue.bundleCache = false;
+      app.vue.renderOptions = Object.assign(app.vue.renderOptions, renderOptions);
       app.vue.renderBundle = (name, context, options) => {
         return renderBundle.bind(app.vue)(bundle, context, options);
       };
