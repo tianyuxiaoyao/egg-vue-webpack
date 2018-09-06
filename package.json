@@ -1,6 +1,6 @@
 {
   "name": "egg-vue-webpack",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "egg view plugin for webpack vue",
   "eggPlugin": {
     "name": "webpackVue"
