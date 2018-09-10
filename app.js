@@ -31,7 +31,7 @@ module.exports = app => {
 
       app.webpack_build_success = true;
       app.vue.bundleCache = false;
-      app.vue.renderOptions = Object.assign(app.vue.renderOptions, renderOptions);
+      app.vue.renderOptions = {...app.vue.renderOptions, ...renderOptions};
       app.vue.renderBundle = (name, context, options) => {
         return renderBundle.bind(app.vue)(bundle, context, options);
       };
